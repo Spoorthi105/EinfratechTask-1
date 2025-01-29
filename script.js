@@ -6,8 +6,8 @@ function addTask() {
     let li = document.createElement("li");
     li.innerHTML = `<span>${taskInput.value}</span>
                     <span>
-                        <span class="edit" onclick="editTask(this)">✏️</span>
-                        <span class="delete" onclick="deleteTask(this)">❌</span>
+                        <span class="edit" onclick="editTask(this)">edit</span>
+                        <span class="delete" onclick="deleteTask(this)">close</span>
                     </span>`;
     taskList.appendChild(li);
     taskInput.value = "";
